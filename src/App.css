@@ -1,0 +1,126 @@
+/* blue = f2e9e4; */
+:root {
+  --beige: #f2e9e4;
+  --darkbeige: #c9ada7;
+  --brown: #9a8c98;
+  --blue: #4a4e69;
+  --navy: #22223b;
+}
+
+html {
+  /* background-color: var(--darkbeige); */
+  background-color: #ED8C8C;
+
+}
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(60vh);
+  visibility: hidden;
+  transition: opacity 1600ms ease-out, transform 600ms ease-out,
+    visibility 1600ms ease-out;
+  will-change: opacity, transform, visibility;
+}
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
+.body {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Courier New", monospace;
+  /* color: rgb(18, 183, 18); */
+  color: var(--navy);
+  justify-content: center;
+
+  background-image: linear-gradient(
+  0deg,
+  hsl(0deg 73% 74%) 0%,
+  hsl(5deg 75% 75%) 8%,
+  hsl(10deg 76% 76%) 14%,
+  hsl(15deg 77% 78%) 18%,
+  hsl(21deg 78% 79%) 21%,
+  hsl(27deg 79% 80%) 23%,
+  hsl(34deg 79% 81%) 26%,
+  hsl(41deg 78% 82%) 28%,
+  hsl(50deg 77% 83%) 32%,
+  hsl(50deg 77% 83%) 36%,
+  hsl(41deg 78% 82%) 40%,
+  hsl(34deg 79% 81%) 46%,
+  hsl(27deg 79% 80%) 53%,
+  hsl(21deg 78% 79%) 60%,
+  hsl(15deg 77% 78%) 69%,
+  hsl(10deg 76% 76%) 78%,
+  hsl(5deg 75% 75%) 89%,
+  hsl(0deg 73% 74%) 100%
+);
+
+}
+
+h1 {
+  font-size: calc((10vh+10vw) / 2);
+  font-size: 5vw;
+  text-align: center;
+  /* font-size:60px; */
+  /* font-size: 5vw; */
+  /* margin-top: 300px; */
+}
+
+h2 {
+  margin: 0px;
+  font-size: 40px;
+}
+
+h3 {
+  display: flex;
+  margin: 30px;
+  align-self: center;
+  justify-self: center;
+}
+
+.textbox {
+  display: flex;
+  flex-direction: column;
+  background-color: #4a4e69;
+  width: 60%;
+  margin: 30px;
+}
+
+p {
+  margin: 10px;
+  color: white;
+}
+
+.menu-with-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 100vw;
+  height: 100vh;
+}
+
+.menu {
+  display: flex;
+  background-color: grey;
+  flex-direction: column;
+  color: black;
+  opacity: 70%;
+  height:100vh;
+  width: 20%;
+  font-size: 60px;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  background-color: #22223b;
+  color: black;
+  opacity: 70%;
+  height:100vh;
+}
